@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Kerstin Hoge</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+  <h1>Kerstin Hoge</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Teaching Resources</a>
+    <a href="papers.html">Papers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+</header>
+
+<main>
+
+  <span id="email-link">Email me</span>
+
+<script>
+  // Split your email into parts to confuse basic scraping bots
+  const user = "kerstin.hoge";
+  const domain = "mod-langs.ox.ac.uk";
+  
+  // Build the email link dynamically after the page loads
+  const container = document.getElementById('email-link');
+  container.innerHTML = `<a href="mailto:${user}@${domain}">Contact Me</a>`;
+</script>
+
+</main>
+
+<footer>
+
+  <p>© 2026 Kerstin Hoge</p>
+
+</footer>
+
+</body>
+
+</html>
