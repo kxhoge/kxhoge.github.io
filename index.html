@@ -40,7 +40,22 @@
 
 </footer>
 
+<span id="email-link">Email me</span>
+
+<section id="contact">
+  <p>Email:</p>
+  
+</section><script>
+  // Split your email into parts to confuse basic scraping bots
+  const user = "kerstin.hoge";
+  const domain = "mod-langs.ox.ac.uk";
+  
+  // Build the email link dynamically after the page loads
+  const container = document.getElementById('email-link');
+  container.innerHTML = `<a href="mailto:${user}@${domain}">Contact Me</a>`;
+</script>
+
 </body>
 
 </html>
-</footer>
+
